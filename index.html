@@ -22,6 +22,7 @@
         }
     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Typography -->
@@ -159,10 +160,124 @@
 <br><hr>
 
 <p>
-    <span class="text-white bg-info mr-5">Margin right 5</span>
-    <span >Text in the middle</span>
-    <span class="text-white bg-primary ml-5">Margin left</span>
+    <span class="text-white bg-info">Margin right 5</span>
+    <span class="mx-5" >Text in the middle</span>
+    <span class="text-white bg-primary">Margin left</span>
 </p>
+<p>
+    <span class="text-white bg-info">Span 1</span>
+    <span class="mx-5" >Menggunakan Margin Horizontal (mx)</span>
+    <span class="text-white bg-primary">Span 2</span>
+</p>
+
+<p>Lorem ipsum dolor sit amet.</p>
+<p class="bg-success m-5">Margin 4 Sisi dengan m-5</p>
+<p>Lorem ipsum dolor sit amet.</p>
+
+<!-- padding horizontal -->
+<p class="px-5 bg-danger text-white">px-5 Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+<!-- padding vertikal -->
+<p class="py-5 bg-warning">py-5 Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+<!-- padding all sides -->
+<p class="bg-primary p-5">p-5 Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+<!-- sizing -->
+
+<div class="w-25 bg-dark text-white p-3">Width 25%</div>
+<div class="w-50 bg-danger text-white p-3">Width 50%</div>
+<div class="w-75 bg-primary text-white p-3">Width 75%</div>
+<div class="w-100 bg-success text-white p-3">Width 100%</div>
+<div class="w-auto bg-secondary text-white p-3 mb-5">Width Auto</div>
+
+<!-- Height -->
+<div style='height: 500px; border: 7px solid aqua'>
+    <div class="d-inline-block h-25 bg-dark text-white p-3">Width 25%</div>
+    <div class="d-inline-block h-50 bg-dangertext-white p-3">Width 50%</div>
+    <div class="d-inline-block h-75 bg-primary text-white p-3">Width 75%</div>
+    <div class="d-inline-block h-100 bg-success text-white p-3">Width 100%</div>
+    <div class="d-inline-block h-auto bg-secondary text-white p-3">Width Auto</div>
+</div>
+<br><hr>
+
+<!-- Border --> 
+<!-- tBEL  -->
+<div class="bg-info p-3 mb-2 border-5 border-danger">Border Relar</div>
+<div class="bg-info p-3 mb-2 border-7 border-top border-danger">Border Top</div>
+<div class="bg-info p-3 mb-2 border-9 border-right border-danger">Border Right</div>
+<div class="bg-info p-3 mb-2 border border-bottom border-danger">Border Bottom</div>
+<div class="bg-info p-3 mb-2 border border-left border-danger">Border Left</div>
+<br><hr>
+<!-- Button -->
+<button class="btn btn-lg btn-light">Button Large</button>
+<button class="btn btn-sm btn-success">Button Small</button>
+<button class="btn btn-block btn-primary">Button Block</button>
+
+<button class="btn btn-outline-danger">Primary</button>
+<button class="btn btn-outline-success">Success</button>
+<button class="btn btn-outline-primary">info</button>
+
+<!-- Dropdown -->
+<div class="dropdown">
+    <!-- tombol -->
+    <button class="btn btn-outline-primary dropdown-toggle"
+            data-toggle="dropdown"
+    >Menu Dropdown</button>
+
+    <!-- list yang akan muncul setelah tombol di tekan -->
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">List dropdown 1</a>
+        <a class="dropdown-item" href="#">List dropdown 2</a>
+        <a class="dropdown-item" href="#">List dropdown 3</a>
+    </div>
+</div>
+<br><hr>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">MyNavigation</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#tekanaku">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="tekanaku">
+            <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="dropdown nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Category</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Small</a>
+                            <a class="dropdown-item" href="#">Medium</a>
+                            <a class="dropdown-item" href="#">Large</a>
+                        </div>
+                    </li>
+                </ul>
+    <form class="form-inline">
+           <input class="form-control mx-3" type="text">
+           <button class="btn btn-outline-light">Search</button>
+    </form>
+</div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- 
     PROPERTY
